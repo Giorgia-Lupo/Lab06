@@ -7,11 +7,14 @@ public class Rilevamento {
 	private String localita;
 	private Date data;
 	private int umidita;
+	
+	private int mese;
 
 	public Rilevamento(String localita, Date data, int umidita) {
 		this.localita = localita;
 		this.data = data;
 		this.umidita = umidita;
+		this.mese = 0;
 	}
 
 	public String getLocalita() {
@@ -46,6 +49,10 @@ public class Rilevamento {
 	@Override
 	public String toString() {
 		return String.valueOf(umidita);
+	}
+	
+	public int getMese () {
+		return mese = data.getMonth();
 	}
 
 	
